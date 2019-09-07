@@ -361,6 +361,14 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Fire",
+                    "type": "Button",
+                    "id": "aca7dd7a-a4fa-44c0-babb-53cd3a8e49b2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -368,10 +376,21 @@
                     "name": "",
                     "id": "7b064790-88e6-4957-ac83-d87841119d29",
                     "path": "<Mouse>/rightButton",
-                    "interactions": "Press",
+                    "interactions": "Hold",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "73a03a62-c2b6-4cf1-9b39-18230d8caba7",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

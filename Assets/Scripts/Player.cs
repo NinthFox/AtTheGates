@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     public CinemachineFreeLook playerCamera;
     public Transform playerCharacter;
     public NavMeshAgent agent;
+    public Animator animator;
+    public Moving moving;
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -29,6 +31,7 @@ public class Player : MonoBehaviour
         }
         playerCharacter = transform.GetChild(1);
         agent = playerCharacter.GetComponent<NavMeshAgent>();
+        animator = playerCharacter.GetComponent<Animator>();
     }
 
 }
