@@ -57,11 +57,6 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-[Aa]ssets/External/*
 
-[Aa]ssets/_TerrainAutoUpgrade/*
 [Aa]ssets/Polybrush Data/*
-[Aa]ssets/[Ss]amples
 [Aa]ssets/[Ss]ampleScenes
-[Aa]ssets/[Ss]tandard Assets
-[Aa]ssets/[Tt]extMesh Pro
