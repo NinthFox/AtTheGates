@@ -11,6 +11,7 @@ namespace ATG.Spells{
         public float damage;
         public float castTime;
         public float manaCost;
+        public float range;
         public float energyCost;
         public float movementModifier;
         public Transform caster;
