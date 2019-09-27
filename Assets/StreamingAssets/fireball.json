@@ -1,0 +1,35 @@
+{
+    "ability": {
+        "title":"Fireball",
+        "description":"Launch a fireball dealing X damage",
+        "types": [
+        {
+            "type":"spell",
+            "base_damage": 20,
+            "magical_types":["fire"],
+            "costs":[
+                {
+                    "cost":"mana",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "type":"ranged",
+            "range":20,
+            "ranged_type":"projectile"
+        },
+        {
+            "type":"aoe",
+            "range":[0,5],
+            "aoe_types_keys":["dot", "surface", "spherical"],
+            "aoe_types": [{
+                "type":"dot",
+                "damage":[]
+            }]
+        }
+    ],
+        "overlay": "",
+        "targets": ["everything", "-self"]
+    }
+}

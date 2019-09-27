@@ -5,7 +5,7 @@ namespace ATG.Spells.Projectile{
 
     using NPC;
 
-    public class FireballProjectile : Projectile{
+    public class FireballProjectile : AProjectile{
 
         public ParticleSystem fireballParticleSystem;
 

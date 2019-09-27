@@ -3,12 +3,12 @@ using System.Collections;
 
 namespace ATG.Spells.Projectile{
     using NPC;
-    public abstract class Projectile : MonoBehaviour, IProjectile {
+    public abstract class AProjectile : MonoBehaviour {
         public float size;
         public float speed;
         public Vector3 target;
         public static GameObject projectileGO;
-        public Spell spell;
+        public Ability ability;
 
         public delegate void ProjectileHitAction(NPC npc);
         public event ProjectileHitAction onProjectileHit;
@@ -22,8 +22,8 @@ namespace ATG.Spells.Projectile{
         private void moveTowardsTarget(){
             transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
         }
-        public void OnLaunch(Spell spell){
-            this.spell = spell;
+        public void OnLaunch(Ability ability){
+            this.ability = ability;
             StartCoroutine(Move());
         }
 
@@ -44,18 +44,18 @@ namespace ATG.Spells.Projectile{
             onProjectileHit -= ProjectileHit;
         }
         public void ProjectileHit(NPC npc) {
-            npc.Hit(this.spell);
+            // npc.Hit(this.ability);
             Destroy(this.gameObject);
         }
 
         public void OnTriggerEnter(Collider collider){
-            if (collider.transform != this.spell.caster){
-                NPC npc = collider.gameObject.GetComponent<NPC>();
-                if (npc != null){
-                    this.OnImpact(npc);
+            // if (collider.transform != this.ability.caster){
+            //     NPC npc = collider.gameObject.GetComponent<NPC>();
+            //     if (npc != null){
+            //         this.OnImpact(npc);
                     
-                }
-            }
+            //     }
+            // }
         }
 
     }

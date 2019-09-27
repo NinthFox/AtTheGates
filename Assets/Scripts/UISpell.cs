@@ -17,7 +17,7 @@ namespace ATG.Spells{
         private Image hoverImg;
         private Image onCastImg;
         private bool isHovering = false;
-        public Spell spell;
+        public Ability ability;
 
         public ATG.NPC.NPC target;
 
@@ -25,7 +25,7 @@ namespace ATG.Spells{
         public void Initialize(){
             //Setup spells from a UISpellcontroller
             
-            spell = new Fireball();
+            // spell = new Fireball();
             
         }
 
@@ -36,14 +36,14 @@ namespace ATG.Spells{
 
         public void OnPointerUp(PointerEventData pointer){
             if (isPointerDown){
-                Debug.Log("Launch spell");
-                spell = GetComponent<Fireball>();
+                // Debug.Log("Launch spell");
+                // spell = GetComponent<Fireball>();
                 
-                isPointerDown = false;
-                //Launch spell
-                spell.setTarget(target.transform);
-                spell.caster = Player.Instance.transform;
-                spell.StartCasting();
+                // isPointerDown = false;
+                // //Launch spell
+                // spell.setTarget(target.transform);
+                // spell.caster = Player.Instance.transform;
+                // spell.StartCasting();
             }
         }
 
