@@ -1,9 +1,9 @@
 using UnityEngine;
 
-namespace ATG.Spells.Projectile{
+namespace ATG.Abilities.Projectile{
     using NPC;
     interface IProjectile{
-        void OnLaunch(Spell spell);
+        void OnLaunch(Ability spell);
         void OnImpact(NPC npc);
 
     }

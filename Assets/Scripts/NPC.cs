@@ -1,6 +1,6 @@
 using UnityEngine;
 namespace ATG.NPC{
-    using ATG.Spells;
+    using ATG.Abilities;
     public class NPC : MonoBehaviour {
         // public void Hit(Spell spell){
         //     Debug.Log("hit " + gameObject.name);

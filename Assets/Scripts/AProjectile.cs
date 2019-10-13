@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace ATG.Spells.Projectile{
+namespace ATG.Abilities.Projectile{
     using NPC;
     public abstract class AProjectile : MonoBehaviour {
         public float size;

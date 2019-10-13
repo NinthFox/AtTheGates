@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace ATG.Spells{
+namespace ATG.Abilities{
     public interface ISpell {
         void OnDamage();
         void OnKill();

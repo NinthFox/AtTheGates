@@ -1,9 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
-using ATG.Spells.Projectile;
+using ATG.Abilities.Projectile;
 
-namespace ATG.Spells{
+namespace ATG.Abilities{
     public class Fireball : Ability {
         // public float channelingSpeed = 0.2f;
 
